@@ -1,0 +1,4 @@
+Simple program to calculate the volume of a cube. 
+
+Returns negative values (1-7 inclusive) depending on the combination of axis 
+the negative value were entered in.
