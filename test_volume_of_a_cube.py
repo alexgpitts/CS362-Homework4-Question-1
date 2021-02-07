@@ -21,29 +21,29 @@ class TestCase(unittest.TestCase):
 
     #testing if it can tell when negative values are entered for length width or hight
     #individually
-    def test_negative_length_error(self):
-        self.assertEqual(volume_of_a_cube.volume_of_cube(-1, 4, 4), -1)
+    def test_negative_length(self):
+        self.assertEqual(volume_of_a_cube.volume_of_cube(-1, 4, 4), -16)
 
-    def test_negative_width_error(self):
-        self.assertEqual(volume_of_a_cube.volume_of_cube(4, -1, 4), -2)
+    def test_negative_width(self):
+        self.assertEqual(volume_of_a_cube.volume_of_cube(4, -1, 4), -16)
     
-    def test_negative_hight_error(self):
-        self.assertEqual(volume_of_a_cube.volume_of_cube(4, 4, -1), -4)
+    def test_negative_hight(self):
+        self.assertEqual(volume_of_a_cube.volume_of_cube(4, 4, -1), -16)
 
 
     #testing if it can tell when negative values are entered for length width or hight
     #in combination
-    def test_negative_length_and_width_error(self):
-        self.assertEqual(volume_of_a_cube.volume_of_cube(-1, -5, 4), -3)
+    def test_negative_length_and_width(self):
+        self.assertEqual(volume_of_a_cube.volume_of_cube(-1, -5, 4), 20)
 
-    def test_negative_length_and_hight_error(self):
-        self.assertEqual(volume_of_a_cube.volume_of_cube(-1, 4, -4), -5)
+    def test_negative_length_and_hight(self):
+        self.assertEqual(volume_of_a_cube.volume_of_cube(-1, 4, -4), 16)
     
-    def test_negative_width_and_hight_error(self):
-        self.assertEqual(volume_of_a_cube.volume_of_cube(1, -5, -4), -6)
+    def test_negative_width_and_hight(self):
+        self.assertEqual(volume_of_a_cube.volume_of_cube(1, -5, -4), 20)
     
-    def test_negative_all_error(self):
-        self.assertEqual(volume_of_a_cube.volume_of_cube(-1, -5, -4), -7)
+    def test_negative_all(self):
+        self.assertEqual(volume_of_a_cube.volume_of_cube(-1, -5, -4), -20)
 
 
 
