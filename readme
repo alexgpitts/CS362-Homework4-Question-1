@@ -1,80 +1,21 @@
 Simple program to calculate the volume of a cube. 
 
-Returns negative values (1-7 inclusive) depending on the combination of axis 
-the negative value were entered in.
+Returns negative -1 if user tries to enter a negative edge value
 
 sample output: 
-test_negative_all (__main__.TestCase) ... FAIL
-test_negative_hight (__main__.TestCase) ... FAIL
-test_negative_length (__main__.TestCase) ... FAIL
-test_negative_length_and_hight (__main__.TestCase) ... FAIL
-test_negative_length_and_width (__main__.TestCase) ... FAIL
-test_negative_width (__main__.TestCase) ... FAIL
-test_negative_width_and_hight (__main__.TestCase) ... FAIL
-test_volume_of_a_cube1 (__main__.TestCase) ... ok
-test_volume_of_a_cube2 (__main__.TestCase) ... ok
-test_volume_of_a_cube3 (__main__.TestCase) ... ok
+test_negative_edge (__main__.TestCase) ... FAIL
+test_volume_of_a_cube (__main__.TestCase) ... ok
 test_volume_of_a_cube_float (__main__.TestCase) ... ok
 
 ======================================================================
-FAIL: test_negative_all (__main__.TestCase)
+FAIL: test_negative_edge (__main__.TestCase)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "c:\Users\pitts\Documents\School\Winter 2021\CS 362\Week 5\Homework 4\CS362-Homework4-Question-1\test_volume_of_a_cube.py", line 46, in test_negative_all
-    self.assertEqual(volume_of_a_cube.volume_of_cube(-1, -5, -4), -20)
-AssertionError: -1 != -20
-
-======================================================================
-FAIL: test_negative_hight (__main__.TestCase)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "c:\Users\pitts\Documents\School\Winter 2021\CS 362\Week 5\Homework 4\CS362-Homework4-Question-1\test_volume_of_a_cube.py", line 31, in test_negative_hight
-    self.assertEqual(volume_of_a_cube.volume_of_cube(4, 4, -1), -16)
-AssertionError: -1 != -16
-
-======================================================================
-FAIL: test_negative_length (__main__.TestCase)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "c:\Users\pitts\Documents\School\Winter 2021\CS 362\Week 5\Homework 4\CS362-Homework4-Question-1\test_volume_of_a_cube.py", line 25, in test_negative_length
-    self.assertEqual(volume_of_a_cube.volume_of_cube(-1, 4, 4), -16)
-AssertionError: -1 != -16
-
-======================================================================
-FAIL: test_negative_length_and_hight (__main__.TestCase)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "c:\Users\pitts\Documents\School\Winter 2021\CS 362\Week 5\Homework 4\CS362-Homework4-Question-1\test_volume_of_a_cube.py", line 40, in test_negative_length_and_hight
-    self.assertEqual(volume_of_a_cube.volume_of_cube(-1, 4, -4), 16)
-AssertionError: -1 != 16
-
-======================================================================
-FAIL: test_negative_length_and_width (__main__.TestCase)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "c:\Users\pitts\Documents\School\Winter 2021\CS 362\Week 5\Homework 4\CS362-Homework4-Question-1\test_volume_of_a_cube.py", line 37, in test_negative_length_and_width
-    self.assertEqual(volume_of_a_cube.volume_of_cube(-1, -5, 4), 20)
-AssertionError: -1 != 20
-
-======================================================================
-FAIL: test_negative_width (__main__.TestCase)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "c:\Users\pitts\Documents\School\Winter 2021\CS 362\Week 5\Homework 4\CS362-Homework4-Question-1\test_volume_of_a_cube.py", line 28, in test_negative_width
-    self.assertEqual(volume_of_a_cube.volume_of_cube(4, -1, 4), -16)
-AssertionError: -1 != -16
-
-======================================================================
-FAIL: test_negative_width_and_hight (__main__.TestCase)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "c:\Users\pitts\Documents\School\Winter 2021\CS 362\Week 5\Homework 4\CS362-Homework4-Question-1\test_volume_of_a_cube.py", line 43, in test_negative_width_and_hight
-    self.assertEqual(volume_of_a_cube.volume_of_cube(1, -5, -4), 20)
-AssertionError: -1 != 20
+  File "c:\Users\pitts\Documents\School\Winter 2021\CS 362\Week 5\Homework 4\CS362-Homework4-Question-1\test_volume_of_a_cube.py", line 18, in test_negative_edge
+    self.assertEqual(volume_of_a_cube.volume_of_cube(-4), 64)
+AssertionError: -1 != 64
 
 ----------------------------------------------------------------------
-Ran 11 tests in 0.001s
+Ran 3 tests in 0.000s
 
-FAILED (failures=7)
-
-[Done] exited with code=1 in 0.091 seconds
+FAILED (failures=1)
