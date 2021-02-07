@@ -2,3 +2,21 @@ Simple program to calculate the volume of a cube.
 
 Returns negative values (1-7 inclusive) depending on the combination of axis 
 the negative value were entered in.
+
+sample output: 
+test_negative_all_error (__main__.TestCase) ... ok
+test_negative_hight_error (__main__.TestCase) ... ok
+test_negative_length_and_hight_error (__main__.TestCase) ... ok
+test_negative_length_and_width_error (__main__.TestCase) ... ok
+test_negative_length_error (__main__.TestCase) ... ok
+test_negative_width_and_hight_error (__main__.TestCase) ... ok
+test_negative_width_error (__main__.TestCase) ... ok
+test_volume_of_a_cube1 (__main__.TestCase) ... ok
+test_volume_of_a_cube2 (__main__.TestCase) ... ok
+test_volume_of_a_cube3 (__main__.TestCase) ... ok
+test_volume_of_a_cube_float (__main__.TestCase) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.000s
+
+OK
